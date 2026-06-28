@@ -29,7 +29,7 @@ export default function RootLayout({
       <body suppressHydrationWarning >
         <div className="min-h-full flex flex-col">
           <Navber />
-          {children}
+         <div className="mt-8">{children}</div> 
         </div>
 
       </body>
