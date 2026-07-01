@@ -24,14 +24,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en">
-      <body suppressHydrationWarning >
-        <div className="min-h-full flex flex-col">
+    <html lang="en">
+      <body suppressHydrationWarning>
+        <div className="min-h-full flex flex-col" suppressHydrationWarning>
           <Navber />
-         <div className="mt-8">{children}</div> 
+          <div className="mt-8" suppressHydrationWarning>{children}</div>
         </div>
-
       </body>
     </html>
   );
